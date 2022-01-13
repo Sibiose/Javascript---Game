@@ -210,7 +210,7 @@ function stopMoving() {
 }
 
 // BACKGROUND IMAGE---------------------------------
-const.bgImage = new Image();
+const bgImage = new Image();
 bgImage.src = "Resources/Background/game_background_2.png";
 let x = 0;
 let x2 = 3700;
