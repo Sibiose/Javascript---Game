@@ -210,41 +210,19 @@ function stopMoving() {
 }
 
 // BACKGROUND IMAGE---------------------------------
-
-const bgImage1 = new Image();
-bgImage1.src = "Resources/Background/back_land.png";
-const bgImage2 = new Image();
-bgImage2.src = "Resources/Background/back_decor.png"
-const bgImage3 = new Image();
-bgImage3.src = "Resources/Background/battleground.png";
-const bgImage4 = new Image();
-bgImage4.src = "Resources/Background/front_decor.png";
-const bgImage5 = new Image();
-bgImage5.src = "Resources/Background/ground_decor.png";
-
-
-//Animation Loop
+const.bgImage = new Image();
+bgImage.src = "Resources/Background/game_background_2.png";
 let x = 0;
 let x2 = 3700;
 
-
 function animate() {
 
-    //background parallax
+    //background image animation
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    ctx.drawImage(bgImage1, x, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage2, x, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage3, x, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage4, x, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage5, x, 0, 3840, canvas.height);
-
-    //---------------Set 2 of backg
-
-    ctx.drawImage(bgImage1, x2, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage2, x2, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage3, x2, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage4, x2, 0, 3840, canvas.height);
-    ctx.drawImage(bgImage5, x2, 0, 3840, canvas.height);
+    
+    ctx.drawImage(bgImage, x, 0, 3840, canvas.height);
+    ctx.drawImage(bgImage, x2, 0, 3840, canvas.height);
+    
 
     if (x <= -3700) { x = 3700 - gameSpeed }
     else { x -= gameSpeed };
