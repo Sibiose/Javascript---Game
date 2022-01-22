@@ -1,9 +1,9 @@
 //----------------------------IMPORTS------------------------------------
 
-import { animate, ctx, canvas_height, canvas_width, player } from "./main.js";
-import collision from "./collision.js";
-import { obstaclesArray, enemyPassed } from "./obstacle.js";
-import score from "./score.js";
+import { animate, ctx, canvas_height, canvas_width, player } from "/main.js";
+import collision from "/collision.js";
+import { obstaclesArray, enemyPassed } from "/obstacle.js";
+import score from "/score.js";
 
 //-------------------------HTML QUERIES -------------------------------
 const startGameHeader = document.querySelector(".start-game");
