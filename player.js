@@ -1,7 +1,7 @@
 //----------------------------IMPORTS------------------------------------
-import { ctx, canvas, canvas_height } from "/main.js";
-import state from "/state.js";
-import game from "/game.js";
+import { ctx, canvas, canvas_height } from "./main.js";
+import state from "./state.js";
+import game from "./game.js";
 
 //=========================CREATING PLAYER IMAGE=======================
 const playerImg = new Image();
