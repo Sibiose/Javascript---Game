@@ -1,12 +1,12 @@
 //----------------------------IMPORTS------------------------------------
-import { handleObstacles, handleEnemyFrame } from "/obstacle.js";
-import Player from "/player.js";
-import collision from "/collision.js";
-import background from "/background.js";
-import score from "/score.js";
-import game from "/game.js";
-import { resetGameHeader } from "/game.js";
-import state from "/state.js";
+import { handleObstacles, handleEnemyFrame } from "./obstacle.js";
+import Player from "./player.js";
+import collision from "./collision.js";
+import background from "./background.js";
+import score from "./score.js";
+import game from "./game.js";
+import { resetGameHeader } from "./game.js";
+import state from "./state.js";
 
 //---------------------------CANVAS SETUP------------------
 
