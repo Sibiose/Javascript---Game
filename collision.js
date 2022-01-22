@@ -1,6 +1,6 @@
 //----------------------------IMPORTS------------------------------------
-import { player } from "/main.js";
-import { obstaclesArray } from "/obstacle.js";
+import { player } from "./main.js";
+import { obstaclesArray } from "./obstacle.js";
 
 //Creating a collision class
 class Collision {
