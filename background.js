@@ -1,6 +1,6 @@
 //----------------------------IMPORTS------------------------------------
-import { ctx, canvas_height } from "/main.js";
-import game from "/game.js";
+import { ctx, canvas_height } from "./main.js";
+import game from "./game.js";
 
 //---Creating a new backgrond image
 const bgImage = new Image();
