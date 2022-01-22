@@ -1,7 +1,7 @@
 //----------------------------IMPORTS------------------------------------
 
-import { canvas, ctx, canvas_width, canvas_height } from "./main.js";
-import game from "./game.js";
+import { canvas, ctx } from "/main.js";
+import game from "/game.js";
 
 // =========================Obstacle class===========================
 let enemyframeX = 0; // Helper variable that cycles through enemy animation

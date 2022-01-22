@@ -1,8 +1,8 @@
 //----------------------------IMPORTS------------------------------------
 
-import game from "./game.js";
-import { ctx } from "./main.js";
-import { enemyPassed } from "./obstacle.js";
+import game from "/game.js";
+import { ctx } from "/main.js";
+import { enemyPassed } from "/obstacle.js";
 
 //=========================SCORE CLASS===============================
 

@@ -1,7 +1,7 @@
 //----------------------------IMPORTS------------------------------------
 
-import collision from "./collision.js";
-import { player } from "./main.js";
+import collision from "/collision.js";
+import { player } from "/main.js";
 //========================== STATE SWITCHER CLASS ==================
 class State {
   constructor() {
