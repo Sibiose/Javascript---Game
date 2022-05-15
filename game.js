@@ -25,8 +25,9 @@ class Game {
     if (!game.isActive && e.key === "Enter" && !collision.triggered) {
       startGameHeader.classList.add("hide");
       game.isActive = true;
-      animate();
       game.speed = 4;
+      window.removeEventListener("keydown", game.startGame);
+      animate();
     }
   }
   //This method checks if collision occured, and then disables player movement, as well as toggling the !game.isActive
@@ -58,6 +59,7 @@ class Game {
       player.jumping = false;
       player.ducking = false;
       score.scoreValue = 0;
+      window.addEventListener("keydown", game.startGame);
     }
   }
 }

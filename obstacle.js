@@ -76,10 +76,11 @@ function handleObstacles() {
     obstaclesArray.push(new Obstacle());
   }
   // Drawing and updating obstacle movement on canvas
-  for (let i = 0; i < obstaclesArray.length; i++) {
-    obstaclesArray[i].update();
-    obstaclesArray[i].draw();
-  }
+  obstaclesArray.forEach((obstacle) => {
+    obstacle.draw();
+    obstacle.update();
+  });
+
   // Splicing obstacles from the array when obstacles have left the gamescreen, as well as incrementing helper score variable.
   for (let i = 0; i < obstaclesArray.length; i++) {
     if (obstaclesArray[i].x < 0 - obstaclesArray[i].width) {
